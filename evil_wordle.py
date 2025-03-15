@@ -122,16 +122,7 @@ class Keyboard:
         f"({len(self.words)}, {self.difficulty}, "
         f"{color_word(self.feedback_colors, ['░'] * NUM_LETTERS)})"
         )
-        
 
-
-        formatted_rows = [
-            " ".join(color_word(letter) for letter in self.rows[0]),
-            " " + " ".join(color_word(letter) for letter in self.rows[1]),
-            "   " + " ".join(color_word(letter) for letter in self.rows[2])
-        ]
-
-        return "\n".join(formatted_rows)
 class WordFamily:
     """
     A class representing a group or 'family' of words that match a specific
